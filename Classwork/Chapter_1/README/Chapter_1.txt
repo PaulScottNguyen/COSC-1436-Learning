@@ -1,0 +1,66 @@
+Chapter 1: An Overview of Computers and Programming Languages
+Objectives:
+▪ Learn about computer and programming major milestones
+▪ Learn about different types of computers
+▪ Explore the hardware and software components of a computer
+▪ Learn about the language of a computer
+▪ Learn about the evolution of programming languages
+▪ Examine high-level programming languages
+▪ Become aware of structured design and object-oriented design programming methodologies
+▪ Become aware of Standard C++ and its history
+▪ Understand the programming process
+Introduction:
+-	Without software, the computer is useless
+-	Software developed with programming languages
+Computer Components and Operations:
+-	A computer is an electronic device, operating under the control of instructions stored in its own memory
+Diagram: INPUT=>PROCESSING=>OUTPUT
+-	Input: Perform input operations
+-	Processing: Perform mathematical operations
+-	Output: Perform output of processed data to the user
+Categories/Types of Computers: 
+-	Micro Computers: Desktop Computer, Laptop Computer, Smartphone, Console,…
+-	Midsize Computers: Server,…
+-	Mainframe Computers: Supercomputer,…
+Elements of a Computer System:
+-	Hardware: CPU (Central Processing Unit), RAM (Random Access Memory), Secondary Storage, I/O Devices
+-	Software: OS (Operating System), system software, other application software…
+Central Processing Unit:
+-	The CPU interprets and carries out the basic instructions that operate a computer (Control Unit) and arithmetic and logical operations (Arithmetic Logic Unit)
+-	The brain of the computer, multiple cores and threads allows for parallel processing
+Random Access Memory:
+-	Directly connected to the CPU, all programs must be loaded into RAM before they can be executed and manipulated. Memory in RAM will be lost if power is turned off
+Storage:
+-	Devices that store information permanently:
+-	Example: HDD (Hard Disk Drive), SSD (Solid State Drive), Flash drive, Floppy disk, CD-ROMs, DVD-R/RW,…
+I/O Devices:
+-	Feed data and display results:
+-	Example: Keyboard, mouse, monitor, printer,…
+The Language of Computers:
+-	Digital signal represented by sequences of 0s and 1s (binary code)
+-	1 bit can store 1 value of 1 or 0
+-	Byte: A sequence of 8 bits
+-	ASCII (American Standard Code for Information Interchange)
+-	EBCDIC (Extended Binary Coded Decimal Interchange Code)
+-	UNICODE (Universal Coded Character Set)
+-	1 Kilobyte = 1024 bytes; however, disk manufacturers define 1 Kilobyte = 1000 bytes
+Programming Languages:
+-	Low-level language:
++ Machine-dependent
++ 1st & 2nd generation languages
+-	High-level language:
++ Often Machine-independent
++ Source code is developed faster, with fewer errors, easier to read
++ 3rd, 4th & 5th generation languages
+-	Machine Language (1st generation): Sequence of 0s and 1s to program
+-	Assembly Language (2nd generation): Symbolic instruction codes converted into machine code using an assembler
+-	Procedural Languages (3rd generation): English-like words converted into machine code using a compiler or interpreter
+-	Structured Languages (3rd generation): Divide a problem into smaller subproblems
+-	Object-Oriented Programming Languages (3rd generation): Can reuse existing objects
+-	Nonprocedural Programming Languages (4th generation): English-like instructions or interact with a visual environment to retrieve data from databases
+-	Visual Programming Languages (5th generation): Drag and drop objects to build, event-driven programming
+Understanding the Programming Process:
+-	Analyze the problem, outline the problem requirements, and design an algorithm to solve the problem.
+-	Algorithm: A step-by-step problem-solving process that reaches a solution in a finite amount of time
+-	The Program Development Cycle:
+Understand, Plan logic, Write the program, Translate the program, Test the program, Production, Maintain
