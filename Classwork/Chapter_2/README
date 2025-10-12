@@ -1,0 +1,111 @@
+Chapter 2: Basic Elements of C++
+Introduction:
+-	Programming: Process of planning and creating a program
+-	Programming language: A set of rules, symbols, and special words used to communicate instructions to a computer
+Processing a C++ Program:
+1.	Editor: A program to create a source program in C++
+2.	Preprocessor: Include the code from the preprocessor directives
+3.	Compiler: Check that the program obeys the rules and translate it into machine language
+4.	Linker: Combines the program with other programs and libraries provided by the SDK (Software Development Kit) to create executable code
+5.	Loader: Loads executable program into RAM
+6.	Execute: Execute the program
+The Basics of a C++ Program:
+-	Function: A collection of statements; when executed, accomplishes something
+-	Syntax: Rules that specify which statements are legal
+-	Semantic rule: Meaning of the instructions
+Comments:
+-	For the reader, not the compiler, used to remind the developer
+-	Syntax: // for single line comment & /* for multiple line
+Whitespaces:
+-	Include blanks, tabs, and newline characters to separate words, which can be used to make the program more readable
+Special Symbols and Reserved Words:
+-	Special symbols: +-*/.;?,<>=
+-	Reserved words: int, float, const,…
+Identifiers:
+-	Consists of letters, digits, and the underscore character
+-	Must begin with a letter or underscore
+-	C++ is case sensitive
+Data Types:
+-	Set of values together with a set of operations
+-	Simple Data Types:
++ Integral: Numbers without a decimal
+•	Logical values: bool
+•	ASCII characters: char
+•	Positive/Negative numbers: short, int, long, long long
+•	Unsigned/Positive numbers: unsigned char/short/int/long/long long
++ Floating-point: Decimal numbers
+•	Single precision: float (6-7 digits)
+•	Double precision: double (15 digits)
++ Enumeration type: User-defined data type
+Arithmetic Operations:
+-	Addition: + (adds 2 numbers)
+-	Subtraction: - (subtracts 2 numbers)
+-	Multiplication: * (multiplies 2 numbers)
+-	Division: / (divides 2 numbers)
+-	Modulo: % (the remainder from division)
+Order of Precedence:
+-	All operations inside parentheses () are evaluated first
+-	Operators on the same level will be performed from left to right
+-	*, /, % are at the same level and are evaluated next
+-	+, - have the same level of precedence and are evaluated last
+Type Conversions (Casting):
+-	Promotion: From a smaller type to a compatible larger type
+-	Typecasting: Between 2 compatible types
+-	Syntax: static_cast<dataTypeName>(expression)
+String Type:
+-	A string is a sequence of zero or more characters
+-	Each character has a relative position in the string (first character is 0)
+Input:
+-	Data must be loaded into main memory before it can be manipulated
+-	Storing data in memory is a two-step process:
++ Instruct the computer to allocate memory
++ Include statements to put data into memory
+-	Named constant: Memory location whose content cannot change during execution
++ Syntax: const DataType Identifier=Value;
+-	Variable: Memory location whose content may change during execution
++ Syntax: DataType Identifier=Value;
+Assignment Statement:
+-	In C++, = is called the assignment operator
+-	Increment operator (++): increment variable by 1 *Note: ++var and var++ is different
+-	Decrement operator (--): decrement variable by 1
+-	Compound assignments: a combination of an assignment and an arithmetic operator:
+Example: +=; -=; *=; /=; %=
+Relational Operators:
+-	Allow comparisons between two operators, evaluate to true or false
+Example: ==; !=; <; >; <=; >=
+Logical Operations:
+-	For bool and other integral data types (0 is false, anything else is true)
+-	Negation (syntax: !): true becomes false and false becomes true
+-	And (syntax: &&): true if both values are true and both otherwise
+-	Or (syntax: ||): true if at least one of the values is true and both otherwise
+Order of Precedence:
+1.	+ (positive), - (negative)
+2.	++ (post-increment), -- (post-decrement)
+3.	! (not), ++ (pre-increment), -- (pre-decrement)
+4.	* (multiplication), / (division), % (modulo)
+5.	+ (addition), - (subtraction)
+6.	<, >, <=, >= (comparison)
+7.	== (is equal to), != (is not equal to)
+8.	&& (and)
+9.	|| (or)
+10.	= (assignment), +=, -=, *=, /=, %= (compound assignment)
+Input (Read) Statement:
+-	Syntax: cin
+-	Is used with >> (the stream extraction operator) to gather data
+-	Example: cin >> Variable;
+-	Data types:
++ int: skips leading whitespaces, reads optional sign sequence of digits
++ char: skips leading whitespaces, read one ASCII character
++ double: skips leading whitespaces, reads optional sign sequence of digits, reads optional decimal point sequence of digits
++ string: skips leading whitespaces, reads ASCII characters until something else
+Output Statement:
+-	Syntax: cout
+-	Is used with << (the stream insertion operator) to output data
+-	Example: cout << Expression or Manipulator;
+-	Manipulator: used to format the output (endl)
+-	Escape sequences: used to display characters that have a special meaning in C++ or in an output statement
+-	Newline (\n), Tab (\t), Backspace (\b), Return (\r), Backslash (\\), Single quotation (\’), Double quotation (\”)
+Preprocessor Directives:
+-	Many functions and symbols needed are provided as a collection of libraries
+-	Syntax: #include <HeaderFileName>
+-   To use cin, cout: #include <iostream>
