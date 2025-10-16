@@ -1,0 +1,74 @@
+Chapter 3: Input/Output
+- Stream: Sequence (stream) of bytes from source to destination
+- Input stream: Sequence of characters from an input device to the computer
+- Output stream: Sequence of characters from the computer to an output device
+- Use iostream header file to extract/receive data from keyboard and send the ouitput to the screen
++ Syntax: #include <iostream>
+- Contains definitions of two data types (istream & ostream)
+- Contains cin & cout (C-input; C-output)
+- Cin and the Extraction Operator:
++ Syntax: cin >> Variable >> Variable >> …;
++ When scanning, >> skips all leading whitespace
++ For some data types, if input is provided until an invalid value for that type, >> will stop input and will store it for the next variable
+- Using Predefined Functions in a Program
++ Function (subprogram): a set of instructions when activated, accomplish a task
++ main() executes when a program is run
++ Other functions execute only when called
+- Cin and the get function
++ The get function inputs next character (include whitespace)
++ Syntax: cin.get(VarChar)
+- In C++, dot is the member access operator
+- Cin and the ignore function
++ Ignore discards a portion of the input
++ Syntax: cin.ignore(IntExp. CharExp);
+- Cin and the putback function
++ Putback places character back to the input stream
++ Syntax: cin.putback(VarChar);
+- Cin and the peek function
++ Peek returns next character from the input stream, without removing the character from that stream
++ Syntax: VarChar = cin.peek();
+- Input for the string type
++ The function getline reads until the end of the current line
++ Syntax: getline(cin, VarStr);
+- Output and formatting output
++ Syntax: cout << Expression << Manipulator << …;
++ Manipulator is used to format the output
++ Escape sequences are used to display characters that have a special meaning in C++ or in an output statement, aka (\n; \t; \b; \r; \\; \”; \’)
+- Setprecision manipulator
++ Output decimal numbers with up to n decimal places
++ Syntax: setprecision(n)
++ Must include the header #include <iomanip>
+- Fixed and scientific manipulator
++ fixed outputs floating point numbers in a fixed decimal format
++ Syntax: cout << fixed;
++ scientific outputs floating point numbers in scientific format
++ Syntax: cout << scientific;
+- Setting and resetting manipulators
++ Explicitly setting an I/O stream flag/manipulator:
++ Syntax: 
+cout << manipulator;
+cout << setiosflags(ios_base::manipulator);
++ Explicitly resetting an I/O stream flag/manipulator
+cout.unsetf(ios::manipulator);
+cout << resetiosflags(ios_base::manipulator)
+- Showpoint manipulator
++ Showpoint forces output to show the decimal point and trailing zeros
++ Syntax: cout << showpoint;
+- Setw manipulator
++ Outputs the value of an expression in specific columns
++ Output of the expression is right justified
++ Syntax: setw(n)
+- Setfill manipulator
++ Output stream variables can use setfill to fill unused columns with a character
++ Syntax: setfill(ch)
+- Left and right manipulators
++ Syntax: cout << left; cout << right;
+- Types of manipulators:
++ Parameterized: with parameters require iomanip and iostream
++ Non-parameterized: without parameters (only requires iostream)
+- File I/O:
+1. #include <fstream>
+2. ifstream FilestreamVariable; (or ofstream FilestreamVariable;)
+3. FilestreamVariable.open(SourceFileName, Mode);
+4. Use << or >> to do input or output function
+5. FilestreamVariable.close();
