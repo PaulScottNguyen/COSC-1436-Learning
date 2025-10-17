@@ -1,0 +1,5 @@
+NAME        | PRICE    
+__________ _|_ _________
+cat         |       200
+dog         |       250
+humingbird  |       150
