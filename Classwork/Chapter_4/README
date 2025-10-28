@@ -1,0 +1,46 @@
+Chapter 4: Control Structures I (Selection)
+- A computer can proceed:
++ In sequence
++ Selectively (branch): making a choice
++ Repetitively (iteratively): looping
+- Some statements are executed only if certain conditions are met
+- A condition is met if it evaluates to true
+- Relational Operators
++ A condition is represented by a logical (Boolean) expression that can be true or false
++ Ex: ==; !=; <; >; >=; <=
+- Relational Operators and the string type
++ Relational Operators can be applied to strings
++ Strings are compared character by character, starting with the first character
++ Comparison continues until either a mismatch is found or all characters are found equal
++ If two strings of different lengths are compared and the comparison is equal to the last of the shorter string
++ The shorter string is less than the larger string
+- Logical Operators and Logical Expression
++ Boolean operators enable you to combine logical expressions
++ Ex: ! = not; && = and; || = or
+- One-way selection:
++ The statement is executed if the value of the Expression is true
++ The statement is bypassed if the value is false and the program goes to the next statement
+- Two-way selection:
++ If the expression is true, statement1 is executed; otherwise, statement2 is executed
+- Compound (Block of) statements:
++ A compound statement is a single statement
++ No need for a semicolon at the end
+- Multiple selections: Nested if
++ Nesting: One control statement in another
++ An else is associated with the most recent if that has not been paired with an else
++ You can nest control statements in compound statements to remove some of the ambiguity or organize your code
+- Short-Circuit Evaluation:
++ Evaluation of a logical expression stops as soon as the value of the expression is known
+- Conditional Operator (?:)
++ Takes three arguments (ternary operator)
++ If expression1 is true, the result of the conditional expression is expression2; otherwise, the result is conditional expression3
+- Switch structures:
++ Alternative to if-else
++ Switch (integral) expression is evaluated first
++ Value of the expression determines which corresponding action is taken
++ Expression is sometimes called the selector
+- Terminating a Program with the assert function
++ Certain types of errors that are very difficult to catch can occur in a program
++ The predefined function assert is useful in stopping program execution when certain elusive errors occur
++ Must #include <cassert>, to disable it add #define NDEBUG before the preprocessor
+
