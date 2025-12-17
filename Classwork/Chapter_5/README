@@ -1,0 +1,56 @@
+Chapter 5: Control Structures II (Repetition)
+Why is Repetition needed?
+- Allows us to efficiently use variables and memory
+- Validate values
+- Program faster
+- Generate patterns
+while Looping structure
+- Syntax: while (expression) statement;
+- Expression acts as a decision maker and is usually a logical expression
+- Statement is called the body of the loop and can be simple or compound
+- Infinite loop: continues to execute endlessly
++ Not solving the problem, not an algorithm
++ Avoided by including statements in loop body that assure exit condition is eventually false
+- Case 1: Counter-Controlled Loops
++ If you know exactly how many times you need to repeat
+- Case 2: Sentinel-Controlled Loops
++ Loop ends when sentinel variable is encountered
+- Case 3: Flag-Controlled Loops
++ A flag-controlled loop uses a bool variable to control the loop
+- Case 4: EOF-Controlled Loops
++ Use an EOF (End Of File)-Controlled loop to read from an input stream (File) as long as there is something in that stream
+
+EOF Function
+- The function eof can determine the end of file status
+- Is true when you read beyond the end of the file
+- eof is a member of data type istream
+- Syntax: istreamVar.eof()
++ istreamVar is an input stream variable such as cin or a input file variable
+
+For looping (Repetition) Structure
+- The general form of the for statement is:
+- Syntax: for (InitialStatement; LoopCondition; UpdateStatement) Statement;
+
+do...while looping (Repetition) Structure
+- General form of a do...while
+- Syntax: do statement; while (expression);
+- The statement executes first then the expression is evaluated
+- To avoid an infinite loop, body must contain a statement that makes the expression false
+- The statement can be simple or compound
+- Loop always iterates at least once
+
+Choosing the right looping structure
+- If you know or can determine in advance the number of repetitions needed, the for loop is the correct choice
+- If you do not know and cannot determine in advance the number of repetitions needed, and it could be zero, use a while loop
+- If you do not know and cannot determine in advance the number of repetitions, and it is at least one, use a do...while loop
+
+break and continue statements
+- break and continue alter the flow of control
+- break statement is used for two purposes:
++ To exit early from a loop
+* Can eliminate the use of certain flag variables
++ To skip the remainder of the switch structure
+- After the break statement executes, the program continues with the first statement after the structure
+- continue is used in while, for, and do...while structures
+- When executed in a loop, it skips remaining statements and proceeds with the next iteration of the loop
+
