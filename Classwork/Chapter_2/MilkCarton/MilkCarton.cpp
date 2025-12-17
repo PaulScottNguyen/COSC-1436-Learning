@@ -10,5 +10,5 @@ int main()
     cout << "The number of cartons needed is " << NumberOfCartons;
 
     cout << "\nThe cost of producing milk is " << LitersOfMilk * 0.38;
-    cout << "\nThe profit is " << NumberOfCartons * 0.27;
+    cout << "\nThe profit is " << NumberOfCartons * 0.272;
 }
