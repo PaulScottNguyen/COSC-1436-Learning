@@ -1,0 +1,83 @@
+Chapter 6: User-Defined Functions
+
+Functions
+- Functions are like building blocks
+- They allow complicated programs to be divided into manageable pieces
+- Functions:
++ Called modules
++ Like miniature programs
++ Can be put together to form a larger program
++ Can be called more than one time
+
+Advantages
+- A programmer can focus on just that part of the program and construct it, debug it, and perfect it
+- Different people can work on different functions simultaneously
+- Can be re-used (even in different programs)
+- Enhance program readability
+
+Functions in Math
+- A function relates an input to an output
+- A function relates each element of a set with exactly one element of another set (possibly the same set)
+- Example: f(x)=x+1 => f(0)=1; f(1)=2
+- Function(Parameter) => ReturnedValue(FunctionType)
+
+Predefined Functions
+- Functions already defined and provided with C++
+- They do not need to be defined
+- Predefined functions are organized into separate libraries
+- Example:
++ <cmath>:
+* pow(x, y)
+* sqrt(X)
+* floor(x)
+* ceil(x)
+* abs(x)
+* fabs(x)
++ <cctype>:
+* islower(x)
+* isupper(x)
+* tolower(x)
+* toupper(x)
+
+User-defined Functions 
+- Functions created/defined by the user
+- Value-returning functions: have a return type, return a value or specific data type using the return statement
+- Syntax: FunctionType FunctionName(FormalParameterList)
+- Syntax for calling: FunctionName(ActualParameterList)
+- Only last variable will be returned, can return multiple using Type& variables
+- Function Prototype: Creating function without the body
+- Void functions: do not have a return type, do not use return statement to return a value
+- Syntax: void FunctionName(FormalParameterList)
+- Syntax for calling: FunctionName(ActualParameterList)
+
+Types of Parameters
+- Value parameter: a formal parameter that receives a copy of the content of corresponding actual parameter
+- Reference parameter: a formal parameter that receives the location (memory address) of the corresponding actual parameter
+When to use Reference parameter?
+- Returning more than one value
+- Changing the actual parameter
+- When passing the address would save memory space and time
+
+Scope of an Identifier
+- The scope of an identifier refers to where in the program an identifier is accessible
+- Global identifier: Identifiers declared outside of every function definition, accessible from anywhere in the code
++ Functions are global identifiers
++ The definition of one function cannot be included in the body of another function
+- Local identifier: Identifiers declared within a function (or block), accessible only from that function (or block)
++ Parameters of a function
++ Variable declared within a function or block
++ Local identifier are accessible in the nested blocks if there is no variable with the same name in the nested block
+
+Static and Automatic Variables
+- Automatic variable: memory is allocated at block entry and deallocated at block exit
+- Static variable: memory remains allocated as long as the program executes
+- Syntax: static DataType Identifier;
+
+Function Overloading
+- Several functions can have the same name if they have different formal parameter lists
+
+Functions with Default Parameters
+- In a function call, the number of actual and formal parameters must be the same, unless the function has default parameters
+- In the function with default parameters, you can omit trailing actual parameters in the function call
+- If you do not specify the value of a default parameter, the default value is used
+- All default parameters must be the rightmost parameters of the function
