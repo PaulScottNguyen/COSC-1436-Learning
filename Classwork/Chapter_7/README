@@ -1,0 +1,102 @@
+Chapter 7: User-Defined Simple Data Types, Namespaces, and the string Type
+
+Enumeration Type
+- Data Type: a set of values together with a set of operations on those values
+- To define a new simple data type, we need:
++ A name for the data type
++ A set of values for the data type
++ A set of operations on the values
+- Syntax: enum EnumTyoeName {value1, value2,...};
++ value1, value2,... are identifiers called enumerators
++ The set of values is ordered value1 < value2 < value3 <...
+- The values have to be identifiers
+- Example: enum grades {A, B, C, D, F}; enum places {FIRST, SECOND, THIRD, FOURTH};
+- If value has been used in one enum type, it cannot be used by another enumeration type in the same block
+- The same rules apply to enumeration types declared outside of any blocks
+
+Declaring Variables
+- Syntax: EnumTypeName identifier, identifier,...;
+- For example, given the following definition:
+- enum sports {BASKETBALL, FOOTBAL, HOCKEY, BASEBALL, SOCCER, VOLLEYBALL};
+- We can declare the following variables: sports popularSport, mySport;
+
+Assignment
+- The assignment statement: popularSport = FOOTBALL;
+- Stores FOOTBALL into popularSport
+- The statement: mySport = popularSport 
+- Copies the value of the popularSport into mySport
+
+Operations on Enum Types
+- No arithmetic operations are allowed on enum type (+-*/%) or (++ --)
+- Solution: use a static cast
+- Syntax: popularSport = static_cast<sports>(popularSport+1)
+- If popularSport is FOOTBALL then it will jump to HOCKEY
+
+Relational Operators
+- An enumeration type is an ordered set of values
+- Enumeration type is an integer data type and can be used in loops
+
+I/O of enum types
+- I/O are defined only for built-in data types
+- Enumeration type cannot be input/output directly
+
+Functions and Enum types
+- Enumeration types can be passed as parameters to functions either by value or by reference
+- A function can return a value of the enumeration type
+
+Declaring Variables When Defining the Enum Type
+- You can declare variables of an enumeration type when you define an enumeration type
+
+Anonymous Data Types
+- Anonymous type: values are directly specified in the declaration, with no type name
+- Drawbacks:
++ Cannot pass/return an anonymous type to/from a function
++ If you want to use it again, you cannot declare it (with the same identifiers) in the same block
+
+Typedef statement
+- You can create synonyms or aliases to a data type
+- Syntax: typedef ExistingTypeName NewTypeName;
+- Typedef does not create any new data types
+
+Namespaces
+- Global identifiers in a header file used in a program become global in the program
+- Syntax: namespace NameSpaceName{members}
+- The scope of a namespace members is local to the namespace
+- The namespace members can be accessed outside the namespace
+- Example: NameSpaceName::identifier; using namespace NameSpaceName; using NameSpaceName::identifier;
+
+String Type
+- To use the data type string, the program must include the header file string
+- String is capable of storing any size string, first character is in position 0
+
+String Constants
+- string::npos
+- A static member constant value with the greatest possible value for an element of type size_t. The maximum size for a string is 4294967295 on many machines
+
+String Functions
+- size: return length of string
+- length: return length of string
+- max_size: return maximum size of string
+- resize: resize string
+- clear: clear string
+- empty: test if string is empty
+- operator[]: get character in string
+- at: get character in string
+- operator=: string assignment
+- operator+=: append string
+- append: append string
+- push_back: append character to string
+- assign: assign content to string
+- insert: insert into string
+- erase: erase characters
+- replace: replace part of string
+- swap: swap contents with another string
+- copy: copy sequence from string
+- find: find content in string
+- rfind: find last occurrence of content in string
+- find_first_of: find character in string
+- find_last_of: find character in string from the end
+- find_first_not_of: find absence of character in string
+- find_last_not_of: find absence of character in string from the end
+- substr: generate substring
+- compare: compare strings

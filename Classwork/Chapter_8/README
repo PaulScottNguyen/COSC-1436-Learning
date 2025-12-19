@@ -1,0 +1,112 @@
+Chapter 8: Arrays and Strings
+
+Data Types
+- A data type is called simple if variables of that type can store only one value at a time
+- A structured data type is one in which each data item is a collection of other data items
+
+Arrays
+- Array: a collection of a fixed number of components wherein all of the components have the same data type
+- In a one-dimensional array, the components are arranged in a list form
+- Syntax: DataType ArrayName[intExp];
++ <intExp> evaluates to a positive integer and should be a constant
+
+Accessing Array Components
+- General syntax: ArrayName[indexExp];
++ where <indexExp>, called index, is any expresison whose value is a nonnegative integer
+- Index value specifies the position of the component in the array
+- [] is the array subscripting operator
+- The array index always starts at 0 and ends with intExp-1
+
+Processing One-Dimensional Arrays
+- Some basic operations performed on a one-dimensional array are:
++ Initializing
++ Inputting data
++ Outputting data stored in array
++ Finding the largest and/or smallest element
+- Each operation requires ability to step through the elements of the array
+- Easily accomplished by a loop
+
+Array Index Out of Bounds
+- In C++, there is no guard against indices that are out of bounds
+
+Array Initialization During Declaration
+- Array can be initialized during declaration
+- In this case, it is not necessary to specify the size of the array and the size is determined by the number of initial values in the curly brackets
+
+Restrictions on Array Processing
+- C++ does not allow aggregate operations on an array
+
+Arrays as Parameters to Functions
+- Arrays are passed by reference only
++ The symbol & is not used when passing an array as a formal parameter
++ The size of an array is usually omitted and it is usually send as another parameter
++ When we pass an array as a parameter, the base address of the actual array is passed to the formal parameter
+- C++ does not allow functions to return a value of the type array
+
+Arrays and enum
+- C++ allows any integral type to be used as an array index
+- First element has to be 0
+
+Searching an Array for a specific item
+- Sequential search or linear search
++ Searching a list for a given item
++ Starting from the first array element
++ Compare searchItem with the elements in the array
++ Continue the search until either you find the item or no motr data is left in the list to compare with searchItem
+
+Sorting
+- Selection sort rearrange the list by selecting an element and moving it to its proper position in the array
++ Find the smallest element in the unsorted portion of the list
++ Move it to the top of the unsorted portion by swapping with the element currently there
++ Start again with the rest of the list
+
+Auto Declaration and Range-Based for loops
+- C++ allows auto declaration of variables
++ Data type does not need to be specified
++ Example: auto num = 15
+
+C-strings (Character arrays)
+- An array whose components are of type char
+- C-strings are null-terminated('\0' - null character) character arrays
+- Example:
++ 'A' is character A
++ "A" is the C-string A which represents 'A' and '\0'
+- Just use normal string gng
+
+Two-and Multidimensional arrays
+- 2D Array: collection of a fixed number of components (of the same data type) arranged in two dimensions
+- Syntax: DataType ArrayName[intExp1][intExp2];
++ where intExp1 and intExp2 are expressions yielding positive integer values, and specify the number of rows and the number of columns, respectively, in the array
+
+Accessing Array Components
+- Syntax: ArrayName[indexExp1][indexExp2];
+
+Initialization During Declarationh
+- Elements of each row are enclosed within braces and separated by commas
+- All rows are enclosed within braces
+- For number arrays, unspecified are set to 0
+- Example: int matrix[2][3] = {
+    {0,1,2},
+    {10,11,12}
+}
+
+Processing Two-Dimensional Arrays
+- Ways to process a 2D array
++ Process the entire array
++ Process a particular row of the array, called row processing
++ Process a particular column of the array, called column processing
+- Each row and each column of a two dimensional array is a one dimensional array
+
+Passing 2D Arrays as Parameters to functions
+- Parameters to Functions
++ Two dimensional arrays can be passed as parameters to a function
+* Pass by reference: Base address (address of first component of the actual parameter) is passed to formal parameter
++ Two dimensional arrays are stored in row order
++ When declaring a 2D array as a formal parameter, can omit size of first dimension, but not the second
+
+Parallel Arrays
+- Two (or more) arrays are called parallel if their corresponding components hold related information
+
+Multidimensional Arrays
+- Syntax: DataType ArrayName[intExp1][intExp2]...[intExpN];
+- Syntax: ArrayName[indexExp1][indexExp2]...[indexExpN];
